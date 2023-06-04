@@ -1,0 +1,457 @@
+:root {
+  --main-text-color: #434455;
+  --main-background-color: #ffffff;
+  --prressed-state: #404bbf;
+  --primary-brand-color: #4d5ae5;
+  --dark-color: #2e2f42;
+  --light-color: #f4f4fd;
+  --accent-color: #e7e9fc;
+}
+/* Main page */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.02em;
+  background-color: var(--main-background-color);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+header {
+  background-color: var(--main-background-color);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1158px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+}
+/* Logo*/
+
+.logo {
+  color: var(--primary-brand-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-right: 76px;
+}
+.span-header {
+  color: var(--dark-color);
+}
+
+.span-footer {
+  color: var(--light-color);
+  text-decoration: none;
+}
+.header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--accent-color);
+}
+.header-link {
+  display: flex;
+  gap: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+
+  margin-right: auto;
+}
+
+.header-link-nav {
+  color: var(--dark-color);
+  text-decoration: none;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-link .header-link-nav:hover,
+.header-link .header-link-nav:focus {
+  color: var(--prressed-state);
+}
+
+.header-link .header-link-nav:active {
+  color: var(--prressed-state);
+}
+
+.header-nav-li {
+  display: flex;
+  gap: 40px;
+}
+
+address {
+  font-size: 16px;
+  color: var(--main-text-color);
+  line-height: 1.5;
+  font-style: normal;
+}
+.address-link {
+  display: flex;
+  gap: 40px;
+}
+
+.adress-li {
+  display: flex;
+
+  gap: 40px;
+}
+
+.special-teg-address {
+  font-style: normal;
+}
+.address-link-nav {
+  color: var(--main-text-color);
+  text-decoration: none;
+  line-height: 1.5;
+  font-style: normal;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.address-link .address-link-nav:hover,
+.address-link .address-link-nav:focus {
+  color: var(--prressed-state);
+}
+
+.address-link .address-link-nav:active {
+  color: var(--main-text-color);
+}
+
+/*Hero image (Figma)/Section 1 (VSC)*/
+.section-one {
+  padding: 188px 0;
+
+  line-height: 1.07;
+  background-color: var(--dark-color);
+  letter-spacing: 0.02em;
+
+  display: flex;
+  justify-content: center;
+}
+.section-one-title {
+  font-size: 56px;
+
+  color: var(--main-background-color);
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+
+  max-width: 496px;
+
+  margin: 0 auto 48px auto;
+}
+.button-order-service {
+  background: var(--primary-brand-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--main-background-color);
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+
+  min-width: 169px;
+  height: 56px;
+  border: none;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+
+  border-radius: 4px;
+}
+
+.button-order-service:hover,
+.button-order-service:focus {
+  background: var(--prressed-state);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--main-background-color);
+}
+/*Section 1 (Figma)/Section 2 (VSC)*/
+.section-two {
+  background-color: var(--main-background-color);
+  padding: 120px 0;
+}
+
+.section-two .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.section-two-h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+  letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
+}
+
+.section-two-p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section-two-li {
+  width: calc((100% - 72px) / 4);
+}
+
+/* Section 2 (Figma)/Section 3 (VSC)*/
+
+.section-three {
+  padding-top: 0;
+  padding-bottom: 120px;
+}
+
+.section-three-title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 72px;
+}
+
+.section-three-li {
+  gap: 24px;
+  width: calc((100% - 48px) / 3);
+}
+
+/* Section 3 (Figma)/Section 4 (VSC)*/
+
+.section-four {
+  background-color: var(--light-color);
+  padding: 120px 0;
+}
+.team-card {
+  background: var(--main-background-color);
+  font-size: 16px;
+  line-height: 1.5;
+
+  width: calc((100% - 72px) / 4);
+
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.personal-card {
+  padding: 32px 16px;
+}
+.section-four-main-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
+
+  margin-bottom: 72px;
+}
+.section-four-title {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  margin-bottom: 8px;
+}
+.section-four-p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/*Footer*/
+.footer {
+  background: var(--dark-color);
+  padding: 100px 0;
+}
+
+.logo-footer {
+  color: var(--primary-brand-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light-color);
+
+  width: 264px;
+}
+
+/* PORTFOLIO */
+
+/* Filters*/
+
+.section-portfolio {
+  background-color: var(--main-background-color);
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.button-menu {
+  margin-bottom: 72px;
+}
+.button-filters-li {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.button-filters {
+  background: var(--light-color);
+  border: 1px solid var(--accent-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-brand-color);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+
+  padding: 12px 24px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.button-filters:hover,
+.button-filters:focus {
+  background: var(--prressed-state);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-background-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  border: 1px solid;
+  border: 1px solid transparent;
+}
+
+.project-card {
+  display: flex;
+  column-gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+}
+
+.project-card-link {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card-li {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-div {
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  padding: 32px 16px;
+}
+.portfolio-h {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
+}
+
+.portfolio-p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
