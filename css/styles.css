@@ -6,6 +6,8 @@
   --dark-color: #2e2f42;
   --light-color: #f4f4fd;
   --accent-color: #e7e9fc;
+  --subtle-text: #8e8f99;
+  --succes: #31d0aa;
 }
 /* Main page */
 
@@ -78,6 +80,15 @@ img {
 .link {
   text-decoration: none;
 }
+
+.icon {
+  display: inline-block;
+
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
 /* Logo*/
 
 .logo {
@@ -127,10 +138,29 @@ img {
 
   padding-top: 24px;
   padding-bottom: 24px;
+
+  display: block;
+  position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.active::after {
+  position: absolute;
+  content: "";
+  background-color: var(--prressed-state);
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+  left: 0;
+}
+
 .header-link .header-link-nav:hover,
 .header-link .header-link-nav:focus {
   color: var(--prressed-state);
+  transition: width 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link .header-link-nav:active {
@@ -174,6 +204,8 @@ address {
 .address-link .address-link-nav:hover,
 .address-link .address-link-nav:focus {
   color: var(--prressed-state);
+  transition: width 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link .address-link-nav:active {
@@ -237,6 +269,9 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--main-background-color);
+
+  transition: width 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Section 1 (Figma)/Section 2 (VSC)*/
 .section-two {
@@ -258,6 +293,13 @@ address {
   letter-spacing: 0.02em;
 
   margin-bottom: 8px;
+  margin-top: 8px;
+}
+.section-two-icon {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .section-two-p {
@@ -311,7 +353,7 @@ address {
 }
 
 .personal-card {
-  padding: 32px 16px;
+  padding: 32px 16px 8px 16px;
 }
 .section-four-main-title {
   font-size: 36px;
@@ -337,6 +379,58 @@ address {
 .section-four-p {
   font-size: 16px;
   text-align: center;
+}
+.social-links {
+  display: flex;
+  gap: 24px;
+  align-self: center;
+  padding: 0 16px 32px 16px;
+}
+.social-link {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  background-color: var(--primary-brand-color);
+}
+.social-link:hover {
+  background-color: var(--succes);
+  transition: width 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link svg {
+  fill: var(--main-background-color);
+}
+.social-link:hover svg {
+  fill: var(--main-background-color);
+  transition: width 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Section 4 (Figma)/Section 5 (VSC)*/
+.section-five {
+  padding: 120px 0;
+}
+
+.section-five-title {
+  font-size: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 72px;
+}
+
+.section-five-li {
+  width: calc((100% - 5 * 24px) / 6);
+  padding: 16px 32px;
+
+  border: 1px solid var(--subtle-text);
+  border-radius: 4px;
 }
 
 /*Footer*/
@@ -365,6 +459,18 @@ address {
   color: var(--light-color);
 
   width: 264px;
+}
+
+.social-links-footer {
+  display: flex;
+  gap: 24px;
+  align-self: center;
+}
+
+.social-links-p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light-color);
 }
 
 /* PORTFOLIO */
@@ -415,6 +521,9 @@ address {
 
   border: 1px solid;
   border: 1px solid transparent;
+
+  transition: width 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card {
@@ -431,6 +540,15 @@ address {
 
 .project-card-li {
   width: calc((100% - 48px) / 3);
+}
+
+.project-card-li:hover,
+.project-card-li:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+  transition: width 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-div {
