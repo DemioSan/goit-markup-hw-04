@@ -117,6 +117,8 @@ img {
   justify-content: space-between;
   box-sizing: border-box;
   border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-link {
   display: flex;
@@ -141,11 +143,12 @@ img {
 
   display: block;
   position: relative;
-  transition-property: color;
+
+  transition-property: color var(--prressed-state);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.active::after {
+.header-link-nav ::after {
   position: absolute;
   content: "";
   background-color: var(--prressed-state);
@@ -200,6 +203,8 @@ address {
 
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link .address-link-nav:hover,
 .address-link .address-link-nav:focus {
@@ -222,6 +227,19 @@ address {
 
   display: flex;
   justify-content: center;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-one-title {
   font-size: 56px;
@@ -259,6 +277,8 @@ address {
   gap: 10px;
 
   border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-order-service:hover,
@@ -285,6 +305,15 @@ address {
   gap: 24px;
 }
 
+.section-two-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--light-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .section-two-h {
   font-weight: 500;
   font-size: 20px;
@@ -295,12 +324,13 @@ address {
   margin-bottom: 8px;
   margin-top: 8px;
 }
+/*
 .section-two-icon {
   background-color: var(--accent-color);
   border-radius: 4px;
   padding-top: 24px;
   padding-bottom: 24px;
-}
+}*/
 
 .section-two-p {
   font-size: 16px;
