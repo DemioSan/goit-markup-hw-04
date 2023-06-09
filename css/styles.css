@@ -397,9 +397,11 @@ address {
   text-align: center;
 }
 .social-links {
-  display: flex;
+  /*display: flex;
   gap: 24px;
   align-self: center;
+  padding: 32px 0;*/
+
   padding: 32px 0;
 }
 
