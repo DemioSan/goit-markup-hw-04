@@ -635,11 +635,6 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.svg-modal:hover,
-.svg-modal:focus {
-  fill: var(--main-background-color);
-}*/
-
 /* PORTFOLIO */
 
 /* Filters*/
@@ -711,8 +706,7 @@ address {
 .project-card-li {
   width: calc((100% - 48px) / 3);
 
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /*transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 .project-card-li:hover,
@@ -720,9 +714,9 @@ address {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
-  transition: width 250ms;
+  /* transition: width 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(0%);
+  transform: translateY(0%);*/
 }
 
 .portfolio-div {
@@ -771,4 +765,7 @@ address {
 .portfolio-img-p:hover,
 .portfolio-img-p:focus {
   transform: translateY(0%);
+}
+.img-block {
+  display: block;
 }
