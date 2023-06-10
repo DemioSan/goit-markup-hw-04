@@ -701,30 +701,30 @@ address {
 }
 
 .project-card-link {
-  display: flex;
   flex-wrap: wrap;
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card-link:hover,
 .project-card-link:focus {
   transform: translateY(0%);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card-li {
   width: calc((100% - 48px) / 3);
 
   display: block;
-
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-card-li:hover,
+/*.project-card-li:hover,
 .project-card-li:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
+*/
 .portfolio-div {
   border: 1px solid var(--accent-color);
   border-top: none;
