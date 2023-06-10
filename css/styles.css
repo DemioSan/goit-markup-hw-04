@@ -395,6 +395,7 @@ address {
 .section-four-p {
   font-size: 16px;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .social-links-ul {
@@ -411,6 +412,7 @@ address {
   border-radius: 50%;
   display: flex;
   background-color: var(--primary-brand-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -418,15 +420,17 @@ address {
   background-color: var(--prressed-state);
   transition: width 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  fill: var(--light-color);
 }
-.social-link svg {
+/*.social-link svg {
   fill: var(--main-background-color);
 }
 .social-link:hover svg {
   fill: var(--main-background-color);
   transition: width 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+}*/
 
 .section-four-svg {
   fill: var(--light-color);
@@ -518,9 +522,7 @@ address {
   gap: 16px;
   align-self: center;
 }
-.social-links-footer-li {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .social-link-footer {
   justify-content: center;
   align-items: center;
@@ -530,6 +532,7 @@ address {
   border-radius: 50%;
   display: flex;
   background-color: var(--primary-brand-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-footer:hover,
@@ -632,10 +635,10 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-modal:hover,
+/*.svg-modal:hover,
 .svg-modal:focus {
   fill: var(--main-background-color);
-}
+}*/
 
 /* PORTFOLIO */
 
