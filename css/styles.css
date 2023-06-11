@@ -404,9 +404,7 @@ address {
   gap: 24px;
   margin: 0 auto;
 }
-.social-links-li {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .social-link {
   justify-content: center;
   align-items: center;
@@ -429,6 +427,7 @@ address {
 
 .section-four-svg {
   fill: var(--light-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Section 4 (Figma)/Section 5 (VSC)*/
 .section-five {
@@ -713,8 +712,8 @@ address {
   width: calc((100% - 48px) / 3);
   background-color: var(--main-background-color);
 }
-.project-card-li:hover .portfolio-img,
-.project-card-li:focus .portfolio-div {
+.portfolio-img:hover .portfolio-img-p,
+.portfolio-img:focus .portfolio-img-p {
   transform: translateY(0%);
 }
 
