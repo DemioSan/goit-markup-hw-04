@@ -758,6 +758,6 @@ address {
 .portfolio-img:hover .portfolio-img-p {
   transform: translateY(0%);
 }
-.portfolio-img:focus .portfolio-img-p {
+.project-card-link:focus .portfolio-img-p {
   transform: translateY(0%);
 }
